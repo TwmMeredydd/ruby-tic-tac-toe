@@ -38,7 +38,7 @@ class Game
         puts 'Enter column to mark (1 -> 3):'
         col = input_coord
 
-        break if @board.occupied?(row, col)
+        break if @board.cell_empty?(row, col)
 
         puts 'Position taken already!'
       end

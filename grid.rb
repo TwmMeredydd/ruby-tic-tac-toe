@@ -15,7 +15,7 @@ class Grid
     @grid_array[row][col] == ' '
   end
 
-  def filled?
+  def cell_empty?
     !@grid_array.flatten.uniq.include?(' ')
   end
 
